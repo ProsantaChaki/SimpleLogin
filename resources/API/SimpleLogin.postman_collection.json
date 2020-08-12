@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "3cfef06a-d98d-478d-b77d-2fe4e0d8e91c",
+		"name": "SimpleLogin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "prosanta",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "kajolchaki@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "01111111181",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "01111111181",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "01111111181",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://simplelogin.test/api/v1/register",
+							"protocol": "http",
+							"host": [
+								"simplelogin",
+								"test"
+							],
+							"path": [
+								"api",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "01111111181",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "01111111181",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://simplelogin.test/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"simplelogin",
+								"test"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Password Recovery",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "01111111181",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://simplelogin.test/api/v1/password/recovery",
+							"protocol": "http",
+							"host": [
+								"simplelogin",
+								"test"
+							],
+							"path": [
+								"api",
+								"v1",
+								"password",
+								"recovery"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Products Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "content",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "content",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "stock_qty",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "sku_number",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://simplelogin.test/api/v1/products/create",
+							"protocol": "http",
+							"host": [
+								"simplelogin",
+								"test"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Products Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "content content",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "content",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "stock_qty",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "sku_number",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://simplelogin.test/api/v1/products/update/2",
+							"protocol": "http",
+							"host": [
+								"simplelogin",
+								"test"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
